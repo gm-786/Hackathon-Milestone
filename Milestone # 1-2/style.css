@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(139, 105, 105, 0.1);
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #478b64;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #000000;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    margin-bottom: 20px;
+}
+
+.left-section h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: rgb(0, 0, 0); /* Changed to white for consistency with dark background */
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000000;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+}
+
+.right-section h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Button Styling */
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+button:hover {
+    background-color: #ff737c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .left-section {
+        border-right: none;
+        border-bottom: 5px solid #e63946;
+    }
+
+    .profile-picture {
+        margin: 0 auto;
+        display: block;
+    }
+}
